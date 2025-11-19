@@ -13,7 +13,6 @@ class CreatePasien extends CreateRecord
 
     protected function getRedirectUrl(): string
     {
-        // Akan redirect ke halaman list pasien
         return $this->getResource()::getUrl('index');
     }
 }

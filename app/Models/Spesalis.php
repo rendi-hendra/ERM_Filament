@@ -4,12 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Dokter extends Model
+class Spesalis extends Model
 {
     protected $fillable = [
-        'no_sip',
         'nama',
-        'spesalis_id'
     ];
 
 

@@ -24,6 +24,11 @@ class AsuransiPasien extends Model
         return $this->belongsTo(Asuransi::class);
     }
 
+    public function kunjungan()
+    {
+        return $this->hasMany(Kunjungan::class);
+    }
+
     // public function asuransiPasien()
     // {
     //     return $this->hasOne(AsuransiPasien::class);

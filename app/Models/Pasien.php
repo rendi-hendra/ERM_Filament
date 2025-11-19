@@ -33,6 +33,11 @@ class Pasien extends Authenticatable
         return $this->hasMany(AsuransiPasien::class);
     }
 
+    public function kunjungan()
+    {
+        return $this->hasMany(Kunjungan::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
